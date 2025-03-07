@@ -65,10 +65,31 @@ export class AppComponent implements OnInit {
       this.sendPostRequest(name, address, city);
       setTimeout(() => {
         window.location.reload();
-      }, 3000);
+      }, 2000);
     } else {
       console.warn("All fields are required!");
     }
   }
+
+
+  // delete a record
+  async delete() {
+      let id=prompt("Enter ID to delete") || "";
+    fetch(`http://localhost:8080/api/address/delete/${id}`, {
+      method: 'DELETE',
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Record deleted successfully:', data);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000);
+  }  
+
   
+
 }

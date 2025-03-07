@@ -18,9 +18,12 @@ button{
     cursor: pointer;
     margin: 10px;
     position: absolute;
-    left: 43%;
+    left: 38%;
     top: 55%;
     width: 200px;
+}
+.b2{
+    left:50%;
 }
 
 .table-container {
