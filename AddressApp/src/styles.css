@@ -1,0 +1,61 @@
+
+body{
+    background: url("/japan.jpg");
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: bisque;
+
+}
+button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    position: absolute;
+    left: 43%;
+    top: 55%;
+    width: 200px;
+}
+
+.table-container {
+   
+    width: 50%;
+    max-height: 300px;
+    overflow-y: auto;  
+    display: block;
+    border: 1px solid black;
+    top: 60%;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .styled-table thead th {
+    position: sticky;
+    top: 0; 
+    background-color: #007bff; /* Header background color */
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    z-index: 2; /* Ensures header stays on top */
+  }
+  
+  .styled-table th, .styled-table td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .styled-table tbody tr {
+    background-color: rgba(243, 243, 243, 0.358); /* 50% transparent */
+  }
+  

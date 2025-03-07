@@ -1,0 +1,23 @@
+<div>
+  <h1>Address Book</h1>
+  <div class="table-container">
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of list">
+          <td>{{ item.name }}</td>
+          <td>{{ item.address }}</td>
+          <td>{{ item.city }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button (click)="add()">Add Address</button>
+</div>
+<router-outlet></router-outlet>
